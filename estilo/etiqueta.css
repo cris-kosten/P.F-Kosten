@@ -1,0 +1,207 @@
+
+
+/*# sourceMappingURL=etiqueta.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Luckiest+Guy&family=Mr+Dafoe&family=Yatra+One&display=swap');
+
+/*font-family: 'Alex Brush', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Yatra One', cursive;*/
+
+/*  ----- pagina de Contacto ------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Yatra One', cursive;
+}
+/* -----------   Trabajamos con el Header --------*/
+.navbar{
+    background-color: dodgerblue ;
+}
+
+.r1{
+    color: orange;
+    text-shadow: 2px 2px 4px black;
+}
+
+.navbar-toggler i{
+    color: black;
+    padding-left: 10px !important;
+}
+.nav-link:hover{
+    background-color: #333;
+}
+/*   fin del header */ 
+
+#fondo{
+    background-color:darkgrey;
+}
+
+.color{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    color: red;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px blue;
+}
+
+h1{
+    background-color: black ;
+    background-image:url(multimedia/escudo.jpg);
+    background-size: 150px auto;
+    height: 200px;
+    width: 200px auto ;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+img{
+    background-image: url(multimedia/telefono.jpg);
+    background-size:100px auto ;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100px ;
+    width: 100px auto;
+}
+
+.atr{
+    color: fuchsia;
+    text-decoration: underline;
+    text-shadow: 1.5px 1.5px 4px black;
+}
+.subrayado{
+    text-decoration: underline;
+    color: red;
+}
+.recibido{
+    text-decoration: underline;
+    color: red;
+    text-shadow: 1.5px 1.5px 3px yellow ;
+    padding-bottom: 15px;
+}
+#nombre{
+    text-decoration: underline ;
+    color:forestgreen;
+}
+.nombre{
+    text-decoration: underline;
+    color: forestgreen;
+}
+
+form{
+    text-decoration: underline;
+    
+
+}
+footer{
+    height: 120px;
+    text-align: center;
+}
+#resumen{
+    background-color: black;
+    background-image: url(../multimedia/escudo.jpg);
+    background-size: 60px auto;
+    height: 80px;
+    width: 80px auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+/* ---------------- Inicia Pagina De Historia ---------*/
+
+/* trabajamos con el header */ 
+
+#pantalla{
+    background-color: antiquewhite;
+}
+.navbar-brand{
+    background-color: black;
+    color: white;
+}
+.nav-link{
+    color: white;
+}
+
+.lectura h2{
+    text-align: center;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+/* --- trabajamos con el contenedor de la imagen y el texto*/
+#container7{
+    width: 70vw;
+    max-width: 100%;
+    min-width: 70%;
+    margin: auto;
+}
+img{
+    width: 100%;  
+    border-radius: 15px;
+    height: auto;
+}
+
+.lectura .historial p{
+    font-family: 'Yatra One', cursive;
+    margin-bottom: 40px;
+}
+.objetivos{
+    padding-top: 65px;
+}
+.objetivos h4{
+    color: fuchsia;
+    text-decoration: underline;
+    background-size: 35px;
+}
+/* ----  Trabajamos con el footer -----*/
+
+
+
+footer p{
+    text-align: center;
+    color: dodgerblue;
+    font-size: 20px;
+}
+
+/* ----trabajamos con los iconos en el footer --*/
+
+footer a{
+    margin-top: 10px;
+    color: orange;
+    letter-spacing: 15px;
+    font-size: 40px;
+}
+
+
+/*     --------  Pagina  5 Novedades ------*/
+#detras{
+    background-color:beige;
+}
+.novedades{
+    text-align: center;
+    color: dodgerblue;
+    text-decoration: underline;
+
+}
+.novedades{
+    text-align: right;
+    background-image: url(../multimedia/novedades01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: darkorange;
+    height: 700px;
+    width: auto;
+    padding: 40px;
+    border: 25px solid black;
+    border-bottom: 25 solid red;
+    border-left: 20px solid black;
+}
+#ultimo{
+    background-color: black;
+    background-image: url(../multimedia/escudo.jpg);
+    background-size: 60px auto;
+    height: 80px;
+    width: 80px auto;
+    background-repeat: no-repeat;
+    background-position: right;
+}
