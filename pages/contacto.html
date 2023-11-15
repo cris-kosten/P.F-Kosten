@@ -17,9 +17,9 @@
 </head>
 
 
-<body id="fondo">
+<body>
 
-    <header class="navegacion">
+    <header class="navegacion"> 
         <!--  Iniciamos navbar con bootstrap -->
 
         <nav class="navbar navbar-expand-md  navbar-dark">
@@ -51,67 +51,68 @@
         </nav>
     </header>
     <!-- Finalizamos el header con Bootstrap -->
+
     <main>
 
-        <div>
+        <section>
             <h2 class="atr">Club Sport CoderHouse</h2>
-
-            <h3>Av. Paseo Colon 1333 </h3>
-
-            <h3><Span>E-mail:</Span>info@c.a.coderhouse.com.ar</h3>
-
-            <h2 class="subrayado">Telefonos:</h2>
-
-            <p>
-                <h3><span>Secretaria:</span>5355-0036. Horario: lunes de 14 a 19hs./ Martes a Jueves de 15 a 20hs -
-                    sabados 09 a 13hs</h3>
-            </p>
-
-            <h3>NATACION CONSULTAS PERSONALMENTE</h3>
-
-            <H3>Voley: 11 6336 9494 <span class="nombre">(Mateo)</span></H3>
-
-            <h3>futbol: 4237=1664</h3>
-
-            <h3>tenis: 153764-6405 <span id="nombre">(Cristian)</span></h3>
-
-            <h3>Basquet: 11 2525-6040 <span class="nombre">(Hugo)</span></h3>
-
-        </div>
+            <div class="contenedor">
+                <p>Av. Paseo Colon 1333 </p>
+                <p><Span>E-mail:</Span>info@c.a.coderhouse.com.ar</p>
+                <p class="subrayado">Telefonos:</p>
+                <p><span>Secretaria:</span>5355-0036. Horario: lunes de 14 a 19hs./ Martes a Jueves de 15 a 20hs -
+                    sabados 09 a 13hs</p>
+                <strong>NATACION CONSULTAS PERSONALMENTE</strong>
+                <p>Voley: 11 6336 9494 <span class="nombre">(Mateo)</span></p>
+                <p>futbol: 4237-1664</p>
+                <p>tenis: 153764-6405 <span class="nombre">(Cristian)</span></p>
+                <p>Basquet: 11 2525-6040 <span class="nombre">(Hugo)</span></p>
+            </div>
+        </section>
 
         <h2 class="recibido">Contactanos :</h2>
-        <form action="enviar.php" method="post" enctype="text/plain">
-            <label for="">Nombre:</label>
-            <input type="text" placeholder="Escribe tu nombre" required><br>
-            <br>
-            <label for="">Email:</label>
-            <input type="email" placeholder="Tu correo" required><br>
-            <br>
-            <label for="">Numero</label>
-            <input type="number" placeholder="Telefono" required><br>
-            <br>
-            <label for="">Mensaje:</label>
-            <br>
-            <textarea name="area de texto" id="" cols="30" rows="10" placeholder="Dejanos tu consulta"></textarea>
+        <div class="container00">
+            <form action="enviar.php" method="post" enctype="text/plain">
+                <label for="">Nombre:</label>
+                <input type="text" placeholder="Escribe tu nombre" required>
+                <label for="">Email:</label>
+                <input type="email" placeholder="Tu correo" required>
+                <label for="">Numero</label>
+                <input type="number" placeholder="Telefono" required>
+                <label for="">Mensaje:</label>
+                <textarea name="area de texto" id="" cols="30" rows="10" placeholder="Dejanos tu consulta"></textarea>
+                <!-- <input type="submit"> -->
 
 
-            <input type="submit">
-        </form>
 
+                <button>
+                    <span class="click">ENVIAR</span>
+                </button>
+
+                <!-- <a href="#" class="btn-neon">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                    <span id="span4"></span>
+                    ENVIAR AQUI
+                </a> -->
+
+            </form>
+        </div>
     </main>
 
 
 <!-- Inicia Footer -->
-<footer id="container-fluid">
+<footer>
     <div class="row bg-dark">
         <div>
-            <p><strong>opyright 2023 - Club CoderHouse</strong></p>
-            <p><strong>Todos los derechos reservados por un estudiante de Coder</strong></p>
+            <strong class="hugo">opyright 2023 - Club CoderHouse</strong><br>
+            <strong class="hugo">Todos los derechos reservados por un estudiante de Coder</strong>
         </div>
         <div class="redes">
-            <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/login.php"><i class="fa-brands fa-facebook "></i></a>
+            <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-x-twitter fa-bounce"></i></a>
+            <a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+            <a href="https://www.facebook.com/login.php"><i class="fa-brands fa-facebook fa-bounce"></i></a>
         </div>
     </div>
 </footer>

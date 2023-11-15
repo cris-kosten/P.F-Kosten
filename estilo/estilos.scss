@@ -1,3 +1,377 @@
+//# sourceMappingURL=etiqueta.css.map 
+//@import url(https//fonts.googleapis.com/css2?family=Alex+Brush&family=Luckiest+Guy&family=Mr+Dafoe&family=Yatra+One&display=swap)
 
-// los comentarios en sass son con // en una sola linea!
-// uso del $ inicia el nombre de la variable.
+
+
+// font-family Alex Brush cursive
+// font-family Luckiest Guy cursive
+// font-family Mr Dafoe cursive
+// font-family Yatra One cursive
+// font-family Roboto sans-serif
+// font-family Oswald sans-serif
+// font-family Barlow sans-serif
+
+$font30: 'Yatra One',
+cursive;
+$font31: 'Alex Brush',
+cursive;
+$font32: 'Luckiest Guy',
+cursive;
+$font33: 'Mr Dafoe',
+cursive;
+$font34: 'Barlow',
+sans-serif;
+$font35: 'Roboto',
+sans-serif;
+
+
+
+$font1: 'Barlow',
+sans-serif;
+$font2: 'Yatra One',
+cursive;
+
+// operadores - inicio
+$ancho: 720px;
+$alto: 100px;
+
+$var1: 100%;
+$var2: 50%;
+
+$blue: darkblue;
+$verde: green;
+$celente: dodgerblue;
+$rosado: fuchsia;
+$darkgreen: springgreen;
+$amarillo: yellow;
+$naranja: orange ;
+$blanco :#fff;
+$black: #333;
+$negro: black;
+$rojo: red;
+
+$top: 20px;
+$bottom: 30px;
+
+
+$xs: 16px;
+$small: 20px;
+$med: 40px;
+$large: 60px;
+$xl: 80px;
+
+//operadores fin
+
+// paleta de colores
+
+$color1: red;
+$color2: orange;
+$color3: dodgerblue;
+$color4: black;
+$color5: #fff;
+$color6: fuchsia;
+
+$animal: mascota;
+
+//armando constante
+
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    min-height: 100vh;
+    background: #0c192c;
+}
+
+
+// inicia pagina de contacto
+
+//-----------   Trabajamos con el Header --------
+.navbar {
+    background-color: $color3;
+}
+
+.r1 {
+    color: $color2;
+    text-shadow: 2px 2px 4px black;
+}
+
+.navbar-toggler i {
+    color: black;
+    padding-left: 10px !important;
+}
+
+.nav-link:hover {
+    background-color: #333;
+}
+
+//  fin del header 
+
+// color ah los parrafos / h2/h4 y strong
+.atr {
+    margin-top: $top;
+    margin-bottom: $bottom;
+    color: $color6;
+    text-decoration: underline;
+    text-align: center;
+    text-shadow: 1.5px 1.5px 4px black;
+}
+
+.subrayado {
+    text-decoration: underline;
+    color:$color1;
+}
+
+.nombre{
+    color: $darkgreen;
+}
+
+.recibido {
+    text-decoration: underline;
+    text-align: center;
+    color: $color4;
+    text-shadow: 1.5px 1.5px 3px yellow;
+    padding-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+// Le damos color al texto del label 
+label{
+    color: $amarillo;
+    margin-left: 15px;
+}
+
+form {
+    text-decoration: underline;
+}
+
+// creando un bottom    
+
+button{
+    border: 0;
+    background-image: linear-gradient(150deg #26ff00, rgb(238, 255, 0), #ff0800);
+    border-radius: 8px;
+    color: $celente;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 3s;
+}
+
+button .click{
+    background-color: #111;
+    padding: 12px 16px;
+    border-radius: 6px;
+    transition: 3s;
+}
+
+button:hover .click{
+    background: #87dc4ffb;
+}
+    
+
+button:active{
+    transform: scale(0.9);
+}
+//finalizamos el botton
+
+
+// comienza el footer
+
+footer, div, .hugo{
+    text-align: center;
+    color: $color3;
+}
+
+footer .redes{
+    text-align: right;
+}
+
+//---------------- Inicia Pagina De Historia ---------
+
+// trabajamos con el header  
+
+.navbar-brand {
+    background-color: $color4;
+    color: $color5;
+}
+
+.nav-link {
+    color: $color5;
+}
+//fin del header
+
+// titulo h2
+
+.mascota{
+    color:$color2;
+    font-size: $large;
+    text-align: center;
+    margin-top: $top;
+    margin-bottom: $bottom;
+    
+}
+// lineas de textos
+p, em{
+    color: $color5;
+    font-size: $xs;
+}
+
+.-left, em{
+    color: $color5;
+    font-size: $xs;
+    text-align: left;
+    
+}
+// fin  de la linea de textos
+
+//h2 
+.mascota2{
+    text-align: center;
+    color: $naranja;
+    margin-bottom: $bottom; 
+}
+
+h4{
+    text-align: center;
+    color: $amarillo ;
+    text-decoration: underline;
+    margin-bottom: $bottom;
+}
+
+
+// --- trabajamos con el contenedor de la imagen y el texto
+#container7 {
+    width: 70vw;
+    max-width: 100%;
+    min-width: 70%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+}
+
+
+.lectura .historial p {
+    font-family: 'Yatra One', cursive;
+    margin-bottom: 40px;
+}
+
+.objetivos {
+    padding-top: 65px;
+}
+
+
+
+//----  Trabajamos con el footer -----
+
+.club {
+
+    text-align: center;
+    color: dodgerblue;
+    font-size: 20px;
+}
+
+
+footer a {
+    margin-top: 10px;
+    color: orange;
+    letter-spacing: 15px;
+    font-size: 40px;
+}
+
+
+//     --------  Pagina  5 Novedades ------
+
+
+// Le damos un estilo al titulo
+.animacion{
+    margin-top: 25px;
+    color: red;
+    z-index: 2;
+    background-color: transparent;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 5px #fff;
+}
+
+// Creamos un Fondo animado con una Imagen 
+#container {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+
+    background-image: url(../multimedia/novedades01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #4fc3dc,
+        0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+        0 0 50px #ff2d75,
+        0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+//finalizamos el fondo animado 
+
+
+// fotter
+
+.club {
+    text-align: center;
+    color: dodgerblue;
+    font-size: 20px;
+}
+
+
+footer a {
+    margin-top: 10px;
+    color: orange;
+    letter-spacing: 15px;
+    font-size: 40px;
+}
+
+
+// Finalizamos el Fondo animado

@@ -1,1 +1,238 @@
-/*# sourceMappingURL=estilos.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #0c192c;
+}
+
+.navbar {
+  background-color: dodgerblue;
+}
+
+.r1 {
+  color: orange;
+  text-shadow: 2px 2px 4px black;
+}
+
+.navbar-toggler i {
+  color: black;
+  padding-left: 10px !important;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+.atr {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: fuchsia;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 1.5px 1.5px 4px black;
+}
+
+.subrayado {
+  text-decoration: underline;
+  color: red;
+}
+
+.nombre {
+  color: springgreen;
+}
+
+.recibido {
+  text-decoration: underline;
+  text-align: center;
+  color: black;
+  text-shadow: 1.5px 1.5px 3px yellow;
+  padding-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+label {
+  color: yellow;
+  margin-left: 15px;
+}
+
+form {
+  text-decoration: underline;
+}
+
+button {
+  border: 0;
+  background-image: linear-gradient(150deg #26ff00, rgb(238, 255, 0), #ff0800);
+  border-radius: 8px;
+  color: dodgerblue;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 3s;
+}
+
+button .click {
+  background-color: #111;
+  padding: 12px 16px;
+  border-radius: 6px;
+  transition: 3s;
+}
+
+button:hover .click {
+  background: rgba(135, 220, 79, 0.9843137255);
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+footer, div, .hugo {
+  text-align: center;
+  color: dodgerblue;
+}
+
+footer .redes {
+  text-align: right;
+}
+
+.navbar-brand {
+  background-color: black;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+}
+
+.mascota {
+  color: orange;
+  font-size: 60px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+p, em {
+  color: #fff;
+  font-size: 16px;
+}
+
+.-left, em {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+}
+
+.mascota2 {
+  text-align: center;
+  color: orange;
+  margin-bottom: 30px;
+}
+
+h4 {
+  text-align: center;
+  color: yellow;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+
+#container7 {
+  width: 70vw;
+  max-width: 100%;
+  min-width: 70%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  height: auto;
+}
+
+.lectura .historial p {
+  font-family: "Yatra One", cursive;
+  margin-bottom: 40px;
+}
+
+.objetivos {
+  padding-top: 65px;
+}
+
+.club {
+  text-align: center;
+  color: dodgerblue;
+  font-size: 20px;
+}
+
+footer a {
+  margin-top: 10px;
+  color: orange;
+  letter-spacing: 15px;
+  font-size: 40px;
+}
+
+.animacion {
+  margin-top: 25px;
+  color: red;
+  z-index: 2;
+  background-color: transparent;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 5px #fff;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  background-image: url(../multimedia/novedades01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bubbles {
+  position: relative;
+  display: flex;
+}
+
+.bubbles span {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #4fc3dc;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgba(79, 195, 220, 0.2666666667), 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px rgba(255, 45, 117, 0.2666666667), 0 0 50px #ff2d75, 0 0 100px #ff2d75;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0);
+  }
+  100% {
+    transform: translateY(-10vh) scale(1);
+  }
+}
+.club {
+  text-align: center;
+  color: dodgerblue;
+  font-size: 20px;
+}
+
+footer a {
+  margin-top: 10px;
+  color: orange;
+  letter-spacing: 15px;
+  font-size: 40px;
+}/*# sourceMappingURL=estilos.css.map */
