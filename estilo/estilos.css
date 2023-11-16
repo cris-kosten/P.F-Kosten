@@ -9,6 +9,301 @@ body {
   background: #0c192c;
 }
 
+#pantalla {
+  background-color: black;
+}
+
+/* -----------   Trabajamos con el Header --------*/
+.navbar {
+  background-color: dodgerblue;
+}
+
+.r1 {
+  color: orange;
+  text-shadow: 2px 2px 4px black;
+}
+
+.navbar-toggler i {
+  color: black;
+  padding-left: 10px !important;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+.jumbo {
+  background-image: url(../multimedia/bocha.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  color: red;
+  text-shadow: 2.1px 2.1px 4px #fff;
+}
+
+h1, p {
+  text-align: right;
+  margin: 25px;
+  color: red;
+}
+
+.principio {
+  text-align: center;
+  background-color: dodgerblue;
+  color: orange;
+  text-shadow: 1px 1px 3px black;
+  padding: 15px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.izq {
+  background-image: url(../multimedia/portada-home.jpg);
+  margin-top: 58px;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+}
+
+.der {
+  padding: 50px;
+  font-family: "Luckiest Guy", cursive;
+  text-align: center;
+  color: #fff;
+}
+
+.der h3 {
+  text-decoration: underline;
+  text-shadow: 1px 1px 4px springgreen;
+  color: orange;
+}
+
+.der p {
+  font-family: "Luckiest Guy", cursive;
+  text-align: left;
+}
+
+.r2 {
+  height: 50px;
+  background-color: black;
+  text-shadow: 1px 1px 3px #fff;
+  text-decoration: underline;
+  text-align: center;
+  color: red;
+}
+
+.galeria {
+  background-color: #333;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 200px);
+  padding: 20px;
+  grid-gap: 20px;
+}
+
+.item {
+  border: 3px solid black;
+  background-size: cover;
+  background-position: center;
+}
+
+.item1 {
+  background-image: url(../multimedia/galeria01.jpg);
+}
+
+.item2 {
+  background-image: url(../multimedia/galeria03.jpg);
+}
+
+.item3 {
+  background-image: url(../multimedia/galeria02.jpg);
+}
+
+.item4 {
+  background-image: url(../multimedia/galeria05.jpg);
+}
+
+.item5 {
+  background-image: url(../multimedia/galeria04.jpg);
+}
+
+.item6 {
+  background-image: url(../multimedia/galeria07.jpg);
+}
+
+.item7 {
+  background-image: url(../multimedia/galeria06.jpg);
+}
+
+.item8 {
+  background-image: url(../multimedia/galeria08.jpg);
+}
+
+@media only screen and (min-width: 480px) {
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024) {
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .item2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .item3 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+  }
+  .item4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .item5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+  .item6 {
+    grid-column: 2/3;
+    grid-row: 3/3;
+  }
+  .item7 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
+  .item8 {
+    grid-column: 1/4;
+    grid-row: 4/4;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+  }
+}
+.youtube {
+  text-align: center;
+  background-color: black;
+  color: fuchsia;
+  text-shadow: 2px 2px 4px red;
+  padding: 15px;
+  margin-bottom: 0;
+  text-decoration: underline;
+}
+
+.container-tutorial {
+  background-color: #333;
+}
+
+.table-responsive {
+  background-color: #333;
+}
+
+footer {
+  background-color: black;
+}
+
+footer p {
+  text-align: center;
+  color: dodgerblue;
+  font-size: 20px;
+}
+
+.logos {
+  background-color: blue;
+  color: orange;
+  text-align: center;
+}
+
+.derecha h3 {
+  text-align: center;
+  font-size: 30px;
+  color: springgreen;
+  text-shadow: 0 0 3px red;
+  margin-top: 20px;
+}
+
+.derecha p {
+  text-align: center;
+  color: #fff;
+}
+
+.nadar {
+  color: fuchsia;
+}
+
+#container {
+  width: 70vw;
+  max-width: 100%;
+  min-width: 70%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#container img {
+  height: 500px;
+}
+
+#container1 img {
+  height: 500px;
+}
+
+#container2 img {
+  height: 550px;
+  background-size: contain;
+}
+
+#container3 img {
+  height: 500px;
+}
+
+#container4 img {
+  height: 500px;
+}
+
+@media only screen and (max-width: 330px) {
+  #container, #container1, #container2, #container3, #container4 {
+    width: 70%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 330px) and (max-width: 575px) {
+  #container, #container1, #container2, #container3, #container4 {
+    width: 70%;
+    margin: auto;
+  }
+}
+.subtitulo {
+  text-align: center;
+  color: black;
+  background-color: darkorange;
+  text-decoration: none;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item img {
+  width: 55%;
+  height: 100%;
+  background-size: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
+
 .navbar {
   background-color: dodgerblue;
 }
@@ -39,6 +334,11 @@ body {
 .subrayado {
   text-decoration: underline;
   color: red;
+  text-align: center;
+}
+
+.contac {
+  text-align: center;
 }
 
 .nombre {
@@ -64,9 +364,10 @@ form {
   text-decoration: underline;
 }
 
-button {
+button .click {
   border: 0;
   background-image: linear-gradient(150deg #26ff00, rgb(238, 255, 0), #ff0800);
+  display: flexbox;
   border-radius: 8px;
   color: dodgerblue;
   font-size: 18px;
