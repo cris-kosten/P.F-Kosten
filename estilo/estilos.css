@@ -83,13 +83,68 @@ h1, p {
   text-align: left;
 }
 
-.r2 {
-  height: 50px;
-  background-color: black;
-  text-shadow: 1px 1px 3px #fff;
-  text-decoration: underline;
-  text-align: center;
-  color: red;
+.container11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-radial-gradient(#560e86, #0a0011);
+}
+
+.container11 #container11 {
+  font-size: 70pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Fredoka One";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.container11 #container11::before {
+  content: var(--l);
+  position: absolute;
+  transform: scale(1.1);
+  filter: blur(15px);
+}
+
+.container11 #container11::after {
+  content: var(--l);
+  position: absolute;
+  top: 80%;
+  left: 0;
+  filter: blur(30px);
+  transform: rotate(50deg);
+}
+
+.container11 #container11:hover {
+  filter: contrast(250%);
+}
+
+.container11 #container11:nth-child(1) {
+  color: #00bef8;
+}
+
+.container11 #container11:nth-child(2) {
+  color: #ff0697;
+}
+
+.container11 #container11:nth-child(3) {
+  color: #ff4d00;
+}
+
+.container11 #container11:nth-child(4) {
+  color: #ffe600;
+}
+
+.container11 #container11:nth-child(5) {
+  color: #bb00ff;
+}
+
+.container11 #container11:nth-child(6) {
+  color: #26ff00;
+}
+
+.container11 #container11:nth-child(7) {
+  color: #00bef8;
 }
 
 .galeria {
@@ -408,12 +463,57 @@ footer .redes {
   color: #fff;
 }
 
-.mascota {
-  color: orange;
-  font-size: 60px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 30px;
+.container10 {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+}
+
+.container10 #container10 {
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% {
+    color: #fff;
+    text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px;
+  }
+  10%, 90% {
+    color: black;
+    text-shadow: none;
+  }
+}
+.container10 > #container10:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.container10 > #container10:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.container10 > #container10:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.container10 > #container10:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.container10 > #container10:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.container10 > #container10:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.container10 > #container10:nth-child(8) {
+  animation-delay: 1.75s;
+}
+
+.container10 > #container10:nth-child(9) {
+  animation-delay: 2s;
 }
 
 p, em {
