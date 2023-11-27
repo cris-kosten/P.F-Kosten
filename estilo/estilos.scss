@@ -44,7 +44,7 @@ $celente: dodgerblue;
 $rosado: fuchsia;
 $darkgreen: springgreen;
 $amarillo: yellow;
-$naranja: orange ;
+$naranja: orange;
 $blanco :#fff;
 $black: #333;
 $negro: black;
@@ -76,59 +76,55 @@ $animal: mascota;
 //armando constante
 
 
-*{
-    box-sizing:border-box;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 
 
-body{
+body {
     min-height: 100vh;
-    background: #0c192c;
+    background: #111111ea;
 }
+
+
 
 
 
 
 // iniciamos pagina de Inicio - Home 
 
-#pantalla{
-    background-color: $color4;
-}
-
 /* -----------   Trabajamos con el Header --------*/
-.navbar{
-    background-color: dodgerblue ;
+.navbar {
+    background: -webkit-radial-gradient(#560e86, #0a0011);
 }
 
-.r1{
-    color: orange;
-    text-shadow: 2px 2px 4px black;
-}
 
-.navbar-toggler i{
+.navbar-toggler i {
     color: black;
     padding-left: 10px !important;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     background-color: #333;
 }
 
 //-Trabajamos con Jumbotrom Agregando una imagen -------- 
-.jumbo{
+.jumbo {
     background-image: url(../multimedia/bocha.jpg);
     background-size: cover;
     background-position: center;
     height: 450px;
-    color: $color1;
-    text-shadow: 2.1px 2.1px 4px #fff;
 }
-h1, p{
+
+h1,
+p {
     text-align: right;
-    margin: 25px; 
-    color: $color1;
+    margin: 25px;
+    color: #560e86;
+    text-shadow: 1px 1px 4px black;
 }
 
 // ------------  Finalizamos con Jumbotrom ------------ 
@@ -136,39 +132,38 @@ h1, p{
 
 //  --------- trabajamos con section y colocamos una imagen ------ 
 // titlo Nosotros
-.principio{
+.principio {
     text-align: center;
-    background-color: $color3;
+    background: -webkit-radial-gradient(#560e86, #0a0011);
     color: $color2;
-    text-shadow: 1px 1px 3px $color4 ;
     padding: 15px;
     margin-bottom: 0;
     text-decoration: underline;
 }
 
 //img 
-.izq{
+.izq {
     background-image: url(../multimedia/portada-home.jpg);
     margin-top: 58px;
     background-size: cover;
     background-position: center;
     height: 550px;
-    
+
 }
 
 //texto de la portada derecha
-.der{
+.der {
     padding: 50px;
     font-family: 'Luckiest Guy', cursive;
     text-align: center;
-    color: #fff;
 }
-.der h3{
+
+.der h3 {
     text-decoration: underline;
-    text-shadow: 1px 1px 4px springgreen;
-    color: orange;
+    color: $color2;
 }
-.der p{
+
+.der p {
     font-family: 'Luckiest Guy', cursive;
     text-align: left;
 }
@@ -176,15 +171,15 @@ h1, p{
 //----------- trabajamos con galeria usando grid ------
 
 // Creando un Title animado para GALERIA
-.container11{
+.container11 {
     display: flex;
     justify-content: center;
     align-items: center;
     background: -webkit-radial-gradient(#560e86, #0a0011);
 }
 
-.container11 #container11{
-    font-size: 70pt;
+.container11 #container11 {
+    font-size: 40pt;
     font-weight: bold;
     position: relative;
     font-family: "Fredoka One";
@@ -192,51 +187,58 @@ h1, p{
     transition: all 300ms ease-in-out;
 }
 
-.container11 #container11::before{
+.container11 #container11::before {
     content: var(--l);
     position: absolute;
     transform: scale(1.1);
     filter: blur(15px);
 }
 
-.container11 #container11::after{
+.container11 #container11::after {
     content: var(--l);
     position: absolute;
-    top:80%;
+    top: 80%;
     left: 0;
     filter: blur(30px);
     transform: rotate(50deg);
 }
 
-.container11 #container11:hover{
+.container11 #container11:hover {
     filter: contrast(250%);
 }
 
-.container11 #container11:nth-child(1){
-    color: #00bef8 ;
+.container11 #container11:nth-child(1) {
+    color: #00bef8;
 }
-.container11 #container11:nth-child(2){
-    color: #ff0697 ;
+
+.container11 #container11:nth-child(2) {
+    color: #ff0697;
 }
-.container11 #container11:nth-child(3){
-    color:#ff4d00 ;
+
+.container11 #container11:nth-child(3) {
+    color: #ff4d00;
 }
-.container11 #container11:nth-child(4){
-    color: #ffe600 ;
+
+.container11 #container11:nth-child(4) {
+    color: #ffe600;
 }
-.container11 #container11:nth-child(5){
-    color: #bb00ff ;
+
+.container11 #container11:nth-child(5) {
+    color: #bb00ff;
 }
-.container11 #container11:nth-child(6){
-    color:#26ff00 ;
+
+.container11 #container11:nth-child(6) {
+    color: #26ff00;
 }
-.container11 #container11:nth-child(7){
-    color:#00bef8;
+
+.container11 #container11:nth-child(7) {
+    color: #00bef8;
 }
+
 // fin del title animado
 
 // galeria img
-.galeria{
+.galeria {
     background-color: #333;
     display: grid;
     grid-template-columns: 1fr;
@@ -244,83 +246,101 @@ h1, p{
     padding: 20px;
     grid-gap: 20px;
 }
-.item{
+
+.item {
     border: 3px solid black;
     background-size: cover;
     background-position: center;
 }
-.item1{
+
+.item1 {
     background-image: url(../multimedia/galeria01.jpg);
 }
-.item2{
+
+.item2 {
     background-image: url(../multimedia/galeria03.jpg);
 }
-.item3{
+
+.item3 {
     background-image: url(../multimedia/galeria02.jpg);
 }
-.item4{
+
+.item4 {
     background-image: url(../multimedia/galeria05.jpg);
 }
-.item5{
+
+.item5 {
     background-image: url(../multimedia/galeria04.jpg);
 }
-.item6{
+
+.item6 {
     background-image: url(../multimedia/galeria07.jpg);
 }
-.item7{
+
+.item7 {
     background-image: url(../multimedia/galeria06.jpg);
 }
-.item8{
+
+.item8 {
     background-image: url(../multimedia/galeria08.jpg);
 }
 
 // ----- Trabajamos con la media queries ---------
-@media only screen and  (min-width:480px) {
-    .galeria{
+@media only screen and (min-width:480px) {
+    .galeria {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
     }
 }
-@media only screen and (min-width:768px) and (max-width:1024){
-    .galeria{
+
+@media only screen and (min-width:768px) and (max-width:1024) {
+    .galeria {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .item1{
-        grid-column:1/3 ;
+
+    .item1 {
+        grid-column: 1/3;
         grid-row: 1/2;
     }
-    .item2{
-        grid-column:3/4 ;
+
+    .item2 {
+        grid-column: 3/4;
         grid-row: 1/2;
     }
-    .item3{
-        grid-column:1/2;
-        grid-row:2/4 ;
+
+    .item3 {
+        grid-column: 1/2;
+        grid-row: 2/4;
     }
-    .item4{
-        grid-column:2/3 ;
-        grid-row:2/3 ;
-    }
-    .item5{
-        grid-column:3/4;
+
+    .item4 {
+        grid-column: 2/3;
         grid-row: 2/3;
     }
-    .item6{
+
+    .item5 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .item6 {
         grid-column: 2/3;
-        grid-row:3/3;
+        grid-row: 3/3;
     }
-    .item7{
-        grid-column:3/4 ;
-        grid-row:3/4 ;
+
+    .item7 {
+        grid-column: 3/4;
+        grid-row: 3/4;
     }
-    .item8{
-        grid-column:1/4 ;
+
+    .item8 {
+        grid-column: 1/4;
         grid-row: 4/4;
     }
 }
 
-@media only screen and (min-width:1025px){
-    .galeria{
+@media only screen and (min-width:1025px) {
+    .galeria {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 200px 200px;
     }
@@ -328,33 +348,33 @@ h1, p{
 
 // trabajamos con el h2 y un color de fondo entre el video y el mapa
 
-.youtube{
+.youtube {
     text-align: center;
-    background-color: black;
-    color: $color6;
-    text-shadow: 2px 2px 4px $color1;
+    background: -webkit-radial-gradient(#560e86, #0a0011);
+    color: $color2;
     padding: 15px;
     margin-bottom: 0;
     text-decoration: underline;
 }
-.container-tutorial{
+
+.container-tutorial {
     background-color: #333;
 }
 
 
 //----- table  -----*
-.table-responsive{
+.table-responsive {
     background-color: #333;
 }
 
 // ----  Trabajamos con el footer -----
-footer{
-    background-color: black;
+footer {
+    background: -webkit-radial-gradient(#560e86, #0a0011);
 }
 
-footer p{
+footer p {
     text-align: center;
-    color: $color3;
+    color: $color2;
     font-size: 20px;
 }
 
@@ -364,104 +384,121 @@ footer p{
 
 
 
-// ------ Iniciamos 2da Pagina Deportes ------
+// ------ Iniciamos Pagina Deportes ------
 
 
 // -- damos un fondo al h2 de Deportes - 
-.logos{
-    background-color:blue;
-    color: $color2;
+.logos {
+    background-color: $color2;
+    color: $color4;
     text-align: center;
 }
 
 //-- le damos un estilo al contenido tanto titilo como texto --
-.derecha h3{
+.derecha h3 {
     text-align: center;
     font-size: 30px;
     color: $darkgreen;
-    text-shadow: 0 0 3px red;
+    text-shadow: 0 0 3px black;
     margin-top: 20px;
 }
 
-.derecha p{
+.derecha p {
     text-align: center;
-    color: #fff; 
+    color: #fff;
 }
 
-.nadar{
-    color: $color6;
+.nadar {
+    color: #560e86;
 }
 
 
 //------ le damos un min y un max al contenedor de la imagen y la hacemos responsive
 
-#container{
+#container {
     width: 70vw;
     max-width: 100%;
     min-width: 70%;
     margin: auto;
 }
-img{
-    width: 100%;  
+
+img {
+    width: 100%;
     border-radius: 15px;
 }
 
 //--- retocamos las imagenes --
 
-#container img{
+#container img {
     height: 500px;
 }
 
-#container1 img{
+#container1 img {
     height: 500px;
 }
-#container2 img{
+
+#container2 img {
     height: 550px;
     background-size: contain;
 }
-#container3 img{
+
+#container3 img {
     height: 500px;
 }
-#container4 img{
+
+#container4 img {
     height: 500px;
 }
 
 // media queries - de las imagenes para hacerlas responsive 
 
-@media only screen and (max-width:330px){
-    #container, #container1 , #container2, #container3, #container4 {
+@media only screen and (max-width:330px) {
+
+    #container,
+    #container1,
+    #container2,
+    #container3,
+    #container4 {
         width: 70%;
         margin: auto;
     }
 }
 
 @media only screen and (min-width:330px) and (max-width:575px) {
-    #container, #container1 , #container2, #container3, #container4 {
+
+    #container,
+    #container1,
+    #container2,
+    #container3,
+    #container4 {
         width: 70%;
         margin: auto;
-        }
+    }
 }
 
 //finalizamos media queries
 
 
 // ------- carousel ----
-.subtitulo{
+.subtitulo {
     text-align: center;
     color: black;
     background-color: darkorange;
     text-decoration: none;
 }
-.carousel-item{
+
+.carousel-item {
     height: 500px;
 }
-.carousel-item img{
-    width:55%;
+
+.carousel-item img {
+    width: 55%;
     height: 100%;
     background-size: contain;
     object-fit: cover;
     margin: auto;
 }
+
 // finaliza carousel
 
 // inicia pagina de contacto
@@ -491,7 +528,7 @@ img{
 .atr {
     margin-top: $top;
     margin-bottom: $bottom;
-    color: $color6;
+    color: $color2;
     text-decoration: underline;
     text-align: center;
     text-shadow: 1.5px 1.5px 4px black;
@@ -499,23 +536,23 @@ img{
 
 .subrayado {
     text-decoration: underline;
-    color:$color1;
+    color: #560e86;
     text-align: center;
 }
 
-.contac{
+.contac {
     text-align: center;
 }
 
-.nombre{
-    color: $darkgreen;
+.nombre {
+    color: #560e86;
 }
 
 .recibido {
     text-decoration: underline;
     text-align: center;
-    color: $color4;
-    text-shadow: 1.5px 1.5px 3px yellow;
+    color: $color5;
+    text-shadow: 1.5px 1.5px 3px #560e86;
     padding-bottom: 15px;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -523,7 +560,7 @@ img{
 
 
 // Le damos color al texto del label 
-label{
+label {
     color: $amarillo;
     margin-left: 15px;
 }
@@ -534,10 +571,10 @@ form {
 
 // creando un bottom    
 
-button .click{
+button .click {
     border: 0;
     background-image: linear-gradient(150deg #26ff00, rgb(238, 255, 0), #ff0800);
-    display: flexbox;
+    display:inline-flex;
     border-radius: 8px;
     color: $celente;
     font-size: 18px;
@@ -545,32 +582,35 @@ button .click{
     transition: 3s;
 }
 
-button .click{
+button .click {
     background-color: #111;
     padding: 12px 16px;
     border-radius: 6px;
     transition: 3s;
 }
 
-button:hover .click{
+button:hover .click {
     background: #87dc4ffb;
 }
-    
 
-button:active{
+
+button:active {
     transform: scale(0.9);
 }
+
 //finalizamos el botton
 
 
 // comienza el footer
 
-footer, div, .hugo{
+footer,
+div,
+.hugo {
     text-align: center;
     color: $color3;
 }
 
-footer .redes{
+footer .redes {
     text-align: right;
 }
 
@@ -586,81 +626,97 @@ footer .redes{
 .nav-link {
     color: $color5;
 }
+
 //fin del header
 
 // titulo animado
-.container10{
+.container10 {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 3rem;
 }
 
-.container10 #container10{
+.container10 #container10 {
     animation: glow 2s ease-in-out infinite;
 }
 
-@keyframes glow{
-    0%, 100%{
+@keyframes glow {
+
+    0%,
+    100% {
         color: $color5;
         text-shadow: 0 0 12px lime, 0 0 50px lime, 0 0 100px;
     }
-    10%, 90%{
+
+    10%,
+    90% {
         color: $color4;
         text-shadow: none;
     }
 }
 
-.container10 > #container10:nth-child(2){
-    animation-delay:0.25s ;
+.container10>#container10:nth-child(2) {
+    animation-delay: 0.25s;
 }
-.container10 > #container10:nth-child(3){
+
+.container10>#container10:nth-child(3) {
     animation-delay: 0.50s;
 }
-.container10 > #container10:nth-child(4){
-    animation-delay:0.75s ;
+
+.container10>#container10:nth-child(4) {
+    animation-delay: 0.75s;
 }
-.container10 > #container10:nth-child(5){
-    animation-delay:1s ;
+
+.container10>#container10:nth-child(5) {
+    animation-delay: 1s;
 }
-.container10 > #container10:nth-child(6){
-    animation-delay:1.25s ;
+
+.container10>#container10:nth-child(6) {
+    animation-delay: 1.25s;
 }
-.container10 > #container10:nth-child(7){
-    animation-delay:1.50s ;
+
+.container10>#container10:nth-child(7) {
+    animation-delay: 1.50s;
 }
-.container10 > #container10:nth-child(8){
+
+.container10>#container10:nth-child(8) {
     animation-delay: 1.75s;
 }
-.container10 > #container10:nth-child(9){
-    animation-delay:2s ;
+
+.container10>#container10:nth-child(9) {
+    animation-delay: 2s;
 }
+
 // finalizamos el titulo animado
 
 
 // lineas de textos
-p, em{
+p,
+em {
     color: $color5;
     font-size: $xs;
 }
 
-.-left, em{
+.-left,
+em {
     color: $color5;
     font-size: $xs;
     text-align: left;
 }
+
 // fin  de la linea de textos
 
 //h2 
-.mascota2{
+.mascota2 {
     text-align: center;
     color: $naranja;
-    margin-bottom: $bottom; 
+    margin-bottom: $bottom;
 }
 
-h4{
+h4 {
     text-align: center;
-    color: $amarillo ;
+    color: $color2;
     text-decoration: underline;
     margin-bottom: $bottom;
 }
@@ -708,24 +764,26 @@ footer a {
     letter-spacing: 15px;
     font-size: 40px;
 }
+
 // fin footer
 
 //     --------  Pagina  5 Novedades ------
 
 
 // Le damos un estilo al titulo
-.animacion{
+.animacion {
     margin-top: 25px;
-    color: red;
+    margin-bottom: 60px;
+    color: #560e86;
     z-index: 2;
     background-color: transparent;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    text-shadow: 5px 5px 5px #fff;
+    text-shadow: 5px 5px 5px black;
 }
 
 // Creamos un Fondo animado con una Imagen 
-#container {
+#container20 {
     position: relative;
     width: 100%;
     height: 80vh;
@@ -734,47 +792,7 @@ footer a {
     background-image: url(../multimedia/novedades01.jpg);
     background-repeat: no-repeat;
     background-position: center;
-
-
 }
-
-.bubbles {
-    position: relative;
-    display: flex;
-}
-
-.bubbles span {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    background: #4fc3dc;
-    margin: 0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10px #4fc3dc44,
-        0 0 50px #4fc3dc,
-        0 0 100px #4fc3dc;
-    animation: animate 15s linear infinite;
-    animation-duration: calc(125s / var(--i));
-}
-
-.bubbles span:nth-child(even) {
-    background: #ff2d75;
-    box-shadow: 0 0 0 10px #ff2d7544,
-        0 0 50px #ff2d75,
-        0 0 100px #ff2d75;
-}
-
-@keyframes animate {
-    0% {
-        transform: translateY(100vh) scale(0);
-    }
-
-    100% {
-        transform: translateY(-10vh) scale(1);
-    }
-}
-//finalizamos el fondo animado 
-
 
 // fotter
 
