@@ -563,6 +563,12 @@ img {
 label {
     color: $amarillo;
     margin-left: 15px;
+    display: flex;
+}
+// le agregamos un flex ah los input
+input{
+    margin-top: $top;
+    display: flex;
 }
 
 form {

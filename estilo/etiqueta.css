@@ -407,6 +407,12 @@ img {
 label {
   color: yellow;
   margin-left: 15px;
+  display: flex;
+}
+
+input {
+  margin-top: 20px;
+  display: flex;
 }
 
 form {
